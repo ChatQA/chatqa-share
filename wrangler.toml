@@ -1,0 +1,12 @@
+name = "chatqa-share"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-03-22"
+
+
+kv_namespaces = [
+    { binding = "CHATQA_SHARE", id = "d5f692d6b451407683789ec5065a92ff" }
+]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
